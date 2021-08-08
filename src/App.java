@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import lib.LottoCalcurlate;
 
 public class App {
     public static int getNumber() {
@@ -23,6 +24,11 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         ArrayList<Integer> balls = getLotto();
+        LottoCalcurlate LottoCalcurlate = new LottoCalcurlate(balls);
+
         System.out.println(balls);
+
+        int sum = LottoCalcurlate.Lotto_Sum();
+        System.out.println(sum);
     }
 }
